@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+ # Demo container, must have settings folder (with ssl, nginx) and www (the place where your aplication is located)  
+  nginx-php:
+    image: new_image_test
+    container_name: nginx-php
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./settings/ssl:/etc/nginx/ssl
+      - ./settings/nginx:/etc/nginx/sites-available
+      - ./logs/nginx:/var/log/nginx
+      - ./www:/var/www/
+    privileged: true
