@@ -1,5 +1,4 @@
-# docker-image-php7.1-nginx-cron
-Docker image base on Ubuntu with PHP v.7.1, composer, cron with open port 80,443
+# Docker image base on Ubuntu with PHP v.7.1, composer, cron with open port 80,443
 
 ## if we don`t have certificates, create the SSL key and certificate files in one motion by typing:
 ```
