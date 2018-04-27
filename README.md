@@ -1,11 +1,11 @@
-# Docker image base on Ubuntu with PHP v.7.1, composer, cron with open port 80,443
+## Docker image base on Ubuntu with PHP v.7.1 + composer + cron with open port 80,443 and docker-compose exemple
 
-## if we don`t have certificates, create the SSL key and certificate files in one motion by typing:
+### if we don`t have certificates, create the SSL key and certificate files in one motion by typing:
 ```
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt
 ```
 
-## The entirety of the prompts will look something like this:
+### The entirety of the prompts will look something like this:
 ```
 Country Name (2 letter code) [AU]:US 
 State or Province Name (full name) [Some-State]:New York
