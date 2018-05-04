@@ -41,7 +41,7 @@ COPY config/supervisord/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # NGINX mountable directory for apps, mountable directories for config and logs
 VOLUME ["/var/www","/etc/nginx/sites-available", "/etc/nginx/ssl", "/var/log/nginx"]
 
-WORKDIR /var/wwwcd 
+WORKDIR /var/www
 
 # NGINX ports
 EXPOSE 80 443
