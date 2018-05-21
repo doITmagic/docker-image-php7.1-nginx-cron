@@ -28,6 +28,7 @@ curl -sS http://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --fil
 chmod +x /usr/bin/composer  && \
 # configure NGINX as non-daemon
 echo "daemon off;" >> /etc/nginx/nginx.conf  && \
+COPY config/php/php.ini /etc/php/7.1/fpm/php.ini && \
 # configure php-fpm as non-daemon
 sed -i -e "s/;daemonize\s*=\s*yes/daemonize = no/g" /etc/php/7.1/fpm/php-fpm.conf   && \
 # clear apt cache and remove unnecessary packages
